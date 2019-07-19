@@ -3,9 +3,11 @@ Demonstrates an issue with SwiftUI tapAction on Xcode 11 beta 4.
 
 To reproduce:
 
-1. Run the project on an iPhone XR (iOS 13) simulator
-2. Tap the red background around the purple square to change the background to clear
-3. Tap the clear background
+1. Clone the git repo at https://github.com/noahsark769/AppleFeedback-SwiftUIFrameClearBackgroundTap
+2. Open the xcodeproj
+3. Run the project on an iPhone XR (iOS 13) simulator
+4. Tap the red background around the purple square to change the background to clear
+5. Tap the clear background
 
 Expected: The `tapAction` of the frame should be fired and the background should change back to red
 Actual: The  `tapActionn` is not fired unless you tap directly on the purple square
