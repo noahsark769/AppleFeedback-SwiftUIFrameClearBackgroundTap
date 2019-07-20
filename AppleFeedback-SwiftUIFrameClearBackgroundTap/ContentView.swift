@@ -35,9 +35,9 @@ struct TextTapTarget: View {
                 self.isSelected ? Color.red : Color.clear
             )
             .border(Color.green)
-            .tapAction {
+            .gesture(TapGesture().onEnded { _ in
                 self.isSelected.toggle()
-            }
+            })
     }
 }
 
