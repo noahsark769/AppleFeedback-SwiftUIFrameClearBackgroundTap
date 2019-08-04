@@ -1,5 +1,5 @@
 # AppleFeedback-SwiftUIFrameClearBackgroundTap
-Demonstrates an issue with SwiftUI tapAction on Xcode 11 beta 4.
+Demonstrates an issue with SwiftUI tapAction on Xcode 11 beta 4. This has been submitted as FB6748034
 
 To reproduce:
 
