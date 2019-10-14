@@ -12,14 +12,16 @@ struct ShapeTapTarget: View {
     @State var isSelected: Bool = true
 
     var body: some View {
-        ShapeView(shape: Rectangle(), style: Color.purple)
+        Rectangle()
             .frame(width: 100, height: 100)
+            .background(Color.purple)
+            .foregroundColor(.purple)
             .frame(width: 200, height: 200)
             .background(
                 self.isSelected ? Color.red : Color.clear
             )
             .border(Color.green)
-            .tapAction {
+            .onTapGesture {
                 self.isSelected.toggle()
             }
     }
